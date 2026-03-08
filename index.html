@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Portfolio, Ben Franklin Alojado">
+    <meta name="author" content="Ben Franklin L. Alojado">
+    <title>Ben Franklin Alojado — Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Portfolio Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ── NAVIGATION ── -->
+    <nav>
+        <a class="nav-brand" href="#home">BEN FRANKLIN</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certs</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="home">
+        <div class="hero-bg-orb orb1"></div>
+        <div class="hero-bg-orb orb2"></div>
+        <div class="hero-inner">
+
+            <div class="hero-text">
+                <div class="hero-tag"><span class="dot"></span> Available for Opportunities</div>
+                <h1 class="hero-name">Ben Franklin<br><span class="highlight">Alojado</span></h1>
+                <p class="hero-role">and I'm a <span class="typewriter"></span><span class="typewriter-cursor">|</span></p>
+                <p class="hero-desc">1st year BSIS student at University of Southern Mindanao — crafting digital experiences through curiosity, code, and creativity.</p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn-primary">About Me</a>
+                    <a href="#contact" class="btn-ghost">Get In Touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Ben1001011010" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61564065604583" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ben-franklin-alojado-53684a325/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/voooids" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/spi_.ral/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrap">
+                <div class="hero-image-frame">
+                    <div class="corner-deco tl"></div>
+                    <div class="corner-deco br"></div>
+                    <div class="hero-image-inner">
+                        <img src="assets/images/Pro.jpg" alt="Ben Franklin Alojado"
+                             onerror="this.style.background='linear-gradient(135deg,#0d1520,#1a2a3a)';this.style.minHeight='100%'">
+                    </div>
+                    <div class="hero-image-badge">
+                        <span class="num">01</span>
+                        <span class="label">BSIS Student</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ── ABOUT ── -->
+    <div class="section" id="about">
+        <div class="section-label">Introduction</div>
+        <h2 class="section-title reveal">About <span style="color:var(--accent)">Me</span></h2>
+        <div class="about-grid reveal">
+            <div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <span class="stat-num">6+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Certs</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">1st</span>
+                        <span class="stat-label">Year BSIS</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">∞</span>
+                        <span class="stat-label">Curiosity</span>
+                    </div>
+                </div>
+                <br>
+                <div class="info-row"><span class="info-key">NAME</span><span class="info-val">Ben Franklin L. Alojado</span></div>
+                <div class="info-row"><span class="info-key">LOCATION</span><span class="info-val">Poblacion, Matalam, North Cotabato</span></div>
+                <div class="info-row"><span class="info-key">UNIVERSITY</span><span class="info-val">University of Southern Mindanao</span></div>
+                <div class="info-row"><span class="info-key">DEGREE</span><span class="info-val">B.S. Information Systems</span></div>
+                <div class="info-row"><span class="info-key">FOCUS</span><span class="info-val">Web Development & Databases</span></div>
+            </div>
+            <div class="about-text">
+                <p>I am a <span class="em">1st year college student at the University of Southern Mindanao</span>, majoring in Information Systems. I live in Poblacion, Matalam, North Cotabato. I'm the type of person who likes to learn and has a curious mind, especially in the field of technology.</p>
+                <p>My journey in the world of technology is driven by curiosity and the urge to <span class="em">continuously improve my abilities</span>. Until finally, I found one of the most exciting parts of technology — <span class="em">development</span>.</p>
+                <p>I've learned about several programming languages and created projects related to web development and database management. I am eager to <span class="em">explore innovative solutions</span> and contribute to meaningful projects, and excited to connect with professionals in the industry.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ── SKILLS ── -->
+    <div class="section" id="skills">
+        <div class="section-label">What I Know</div>
+        <h2 class="section-title reveal">My <span style="color:var(--accent)">Skills</span></h2>
+        <div class="skills-grid reveal">
+            <div class="skill-card">
+                <div class="skill-icon" style="color:#f89820">☕</div>
+                <div class="skill-name">Java</div>
+                <div class="skill-bar-wrap"><div class="skill-bar" style="width:70%"></div></div>
+                <div class="skill-pct">70%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon" style="color:#e34f26">&#60;/&#62;</div>
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
+                <div class="skill-pct">85%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon" style="color:#3776ab">🐍</div>
+                <div class="skill-name">Python</div>
+                <div class="skill-bar-wrap"><div class="skill-bar" style="width:65%"></div></div>
+                <div class="skill-pct">65%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon" style="color:#00758f">🗃️</div>
+                <div class="skill-name">SQL</div>
+                <div class="skill-bar-wrap"><div class="skill-bar" style="width:75%"></div></div>
+                <div class="skill-pct">75%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon" style="color:#264de4">🎨</div>
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div>
+                <div class="skill-pct">80%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon" style="color:#f7df1e">⚡</div>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar-wrap"><div class="skill-bar" style="width:72%"></div></div>
+                <div class="skill-pct">72%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ── CERTIFICATES ── -->
+    <div class="section" id="certificates">
+        <div class="section-label">Achievements</div>
+        <h2 class="section-title reveal">My <span style="color:var(--accent)">Certificates</span></h2>
+        <div class="certs-grid reveal">
+            <div class="cert-card">
+                <img src="assets/images/d4f1df18-66b5-490e-8bb5-70bbed30885d.jpeg" alt="Certificate 1" class="cert-img"
+                     onerror="this.style.background='#111d2e';this.style.height='200px'">
+                <div class="cert-info">
+                    <h4>Certificate of Completion</h4>
+                    <span>Achievement · 2024</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <img src="assets/images/8f390619-ea1e-43e2-b627-3735f5927d8e.jpeg" alt="Certificate 2" class="cert-img"
+                     onerror="this.style.background='#111d2e';this.style.height='200px'">
+                <div class="cert-info">
+                    <h4>Certificate of Completion</h4>
+                    <span>Achievement · 2024</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <img src="assets/images/0d88f1b7-cbce-42e1-a87e-94af51cd7dcd.jpeg" alt="Certificate 3" class="cert-img"
+                     onerror="this.style.background='#111d2e';this.style.height='200px'">
+                <div class="cert-info">
+                    <h4>Certificate of Completion</h4>
+                    <span>Achievement · 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ── EDUCATION ── -->
+    <div class="section" id="education">
+        <div class="section-label">Academic Background</div>
+        <h2 class="section-title reveal">My <span style="color:var(--accent)">Education</span></h2>
+        <div class="edu-timeline reveal">
+            <div class="edu-item">
+                <span class="edu-badge active">In Progress</span>
+                <div class="edu-period">2024 — Present</div>
+                <div class="edu-school">University of Southern Mindanao</div>
+                <div class="edu-level">Bachelor of Science in Information Systems (BSIS)</div>
+                <div class="edu-loc"><i class="fas fa-map-marker-alt"></i> Kabacan, North Cotabato, Philippines</div>
+            </div>
+            <div class="edu-item">
+                <span class="edu-badge done">Completed</span>
+                <div class="edu-period">2022 — 2024</div>
+                <div class="edu-school">Matalam High School</div>
+                <div class="edu-level">Senior High School (SHS)</div>
+                <div class="edu-loc"><i class="fas fa-map-marker-alt"></i> Poblacion, Matalam, North Cotabato, Philippines</div>
+            </div>
+            <div class="edu-item">
+                <span class="edu-badge done">Completed</span>
+                <div class="edu-period">2018 — 2022</div>
+                <div class="edu-school">Matalam High School</div>
+                <div class="edu-level">Junior High School (JHS)</div>
+                <div class="edu-loc"><i class="fas fa-map-marker-alt"></i> Poblacion, Matalam, North Cotabato, Philippines</div>
+            </div>
+            <div class="edu-item">
+                <span class="edu-badge done">Completed</span>
+                <div class="edu-period">2011 — 2018</div>
+                <div class="edu-school">Matalam Central Elementary School</div>
+                <div class="edu-level">Elementary Education</div>
+                <div class="edu-loc"><i class="fas fa-map-marker-alt"></i> Poblacion, Matalam, North Cotabato, Philippines</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ── CONTACT ── -->
+    <div class="section" id="contact">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title reveal">Contact <span style="color:var(--accent)">Me</span></h2>
+        <div class="contact-grid reveal">
+            <div class="contact-info-block">
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-info-content">
+                        <h4>Location</h4>
+                        <p>Poblacion, Matalam, North Cotabato 9406</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fab fa-facebook"></i></div>
+                    <div class="contact-info-content">
+                        <h4>Facebook</h4>
+                        <p>Ben Franklin Alojado</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+                    <div class="contact-info-content">
+                        <h4>GitHub</h4>
+                        <p>github.com/Ben1001011010</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fab fa-linkedin"></i></div>
+                    <div class="contact-info-content">
+                        <h4>LinkedIn</h4>
+                        <p>ben-franklin-alojado</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" onsubmit="return false;">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="Your phone number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="6" placeholder="Write your message here..."></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn-primary" style="border:none;font-family:'Space Mono',monospace;cursor:pointer">Send Message</button>
+                    <button type="reset" class="btn-ghost" style="font-family:'Space Mono',monospace;cursor:pointer">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <span class="footer-brand-name">Ben Franklin</span>
+                <p class="footer-desc">1st year BSIS student at USM with a passion for web development, databases, and building meaningful digital experiences.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/Ben1001011010" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61564065604583" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ben-franklin-alojado-53684a325/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/voooids" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/spi_.ral/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Skills</h4>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
+                    <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
+                    <li><a href="https://www.w3schools.com/java/" target="_blank">Java</a></li>
+                    <li><a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></li>
+                    <li><a href="https://www.w3schools.com/sql/" target="_blank">SQL</a></li>
+                    <li><a href="https://www.w3schools.com/python/" target="_blank">Python</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Tools</h4>
+                <ul>
+                    <li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
+                    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                    <li><a href="https://code.visualstudio.com/" target="_blank">VS Code</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2024 Ben Franklin L. Alojado. All rights reserved.</span>
+            <span>Built with passion & code</span>
+        </div>
+    </footer>
+
+    <!-- Portfolio Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
